@@ -5,7 +5,12 @@ function EducationInfo(){
         studytitle : "",
         studydate : ""
     })
-    const [getEducationInfoData, setGetEducationInfoData] = useState([])
+    const [getEducationInfoData, setGetEducationInfoData] = useState({
+        school: "consectetur adipisicing",
+        studytitle: "elit. Eligendi non",
+        studydate: "17-08-2020"
+    }
+    )
     function addEducationInfo(){
         setGetEducationInfoData(educationInfoData)
     }

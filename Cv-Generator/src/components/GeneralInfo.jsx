@@ -7,7 +7,12 @@ function GeneralInfo(){
         phone: "",
         address: ""
     })
-    const [ getGeneralInfoData, setGetGeneralInfoData ] = useState([])
+    const [ getGeneralInfoData, setGetGeneralInfoData ] = useState({
+        name: "leroy Jenkins",
+        email: "leroyJenkins@blabla.com",
+        phone: "+90-111-111-11-11",
+        address: "Lorem ipsum dolor sit amet"
+    })
     function addGeneralInfo(){
         setGetGeneralInfoData(generalInfoData)
     }

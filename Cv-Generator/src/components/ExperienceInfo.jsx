@@ -5,7 +5,11 @@ function ExperienceInfo(){
         positiontitle: "",
         workdate: ""
     })
-    const [ getExperienceInfoData, setGetExperienceInfoData ] = useState([])
+    const [ getExperienceInfoData, setGetExperienceInfoData ] = useState({
+        companyname: "quis exercitationem",
+        positiontitle: "culpa nesciunt",
+        workdate: "nihil aut nostrum explicabo"
+    })
     function addExperienceInfo(){
         setGetExperienceInfoData(experienceInfoData)
     }
