@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'palletteGreen':'#87CE78',
+        'pistachio':'#87CE78',
+        'atomicTangerine':'#FCA17D',
       },
     },
   },
