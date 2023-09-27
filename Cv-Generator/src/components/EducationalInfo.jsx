@@ -36,14 +36,14 @@ class EducationalInfo extends Component {
     const { editedSchoolName, editedTitleOfStudy, editedDateOfStudy } = this.state;
 
     return (
-      <div className="flex flex-col w-2/5">
+      <div className="flex flex-col w-3/5 ml-16">
         <label>School Name</label>
         <input type="text" value={editedSchoolName} onChange={this.handleSchoolNameChange} />
         <label>Title of Study</label>
         <input type="text" value={editedTitleOfStudy} onChange={this.handleTitleOfStudyChange} />
         <label>Date of Study</label>
         <input type="text" value={editedDateOfStudy} onChange={this.handleDateOfStudyChange} />
-        <button onClick={this.handleSubmit}>Submit</button>
+        <button className='bg-verdigris' onClick={this.handleSubmit}>Submit</button>
       </div>
     );
   }

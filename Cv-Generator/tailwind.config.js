@@ -9,7 +9,10 @@ export default {
       colors: {
         'pistachio':'#87CE78',
         'atomicTangerine':'#FCA17D',
-        'pinkLavender':'#EEC1EB'
+        'pinkLavender':'#EEC1EB',
+        'lavenderWeb':'#d0d6ea',
+        'verdigris':'#38a3a5',
+        'ghostWhite':'#EBEDF3'
       },
     },
   },

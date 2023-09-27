@@ -5,7 +5,7 @@ import { InfoContainer } from "./components/InfoContainer"
 function App() {
 
   return (
-    <div>
+    <div className='bg-lavenderWeb min-h-screen'>
       <LeftHeader />
       <InfoContainer />
     </div>

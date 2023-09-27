@@ -49,30 +49,36 @@ handlePracticalInfoUpdate = (data) => {
     const { generalInfo, education, experience } = this.state;
     return (
       <div className="grid grid-cols-3 gap-0">
-      <div className="rounded-lg bg-pistachio ml-8 p-8">
+      <div className="rounded-lg bg-pistachio ml-8 p-8 mt-8 border-2 border-black">
         <GeneralInfo {...generalInfo} onUpdate={this.handleGeneralInfoUpdate} />
         <EducationalInfo {...education} onUpdate={this.handleEducationInfoUpdate}/>
         <PracticalInfo {...experience} onUpdate={this.handlePracticalInfoUpdate}/>
       </div>
-            <div className="col-span-2 border-2 border-black mx-8">
-               <div className="border-2 border-black mt-8 mb-8">
-                <p>Personal Info</p>
-                <p>{this.state.generalInfo.name}</p>
-                <p>{this.state.generalInfo.email}</p>
-                <p>{this.state.generalInfo.phoneNumber}</p>
+            <div className="rounded-lg col-span-2 border-2 border-black mx-8 bg-pistachio mt-8">
+               <div className="border-2 border-black m-8 bg-ghostWhite">
+                  <p className='text-center'>Personal Info</p>
+                    <div className='border-2 border-black'>
+                      <p>{this.state.generalInfo.name}</p>
+                      <p>{this.state.generalInfo.email}</p>
+                      <p>{this.state.generalInfo.phoneNumber}</p>
+                    </div>
                </div>
-               <div className="border-2 border-black mt-8 mb-8">
-                <p>Educational Info</p>
-                <p>{this.state.education.schoolName}</p>
-                <p>{this.state.education.titleOfStudy}</p>
-                <p>{this.state.education.dateOfStudy}</p>
+               <div className="border-2 border-black m-8 bg-ghostWhite">
+                  <p className='text-center'>Educational Info</p>
+                    <div className='border-2 border-black'>
+                      <p>{this.state.education.schoolName}</p>
+                      <p>{this.state.education.titleOfStudy}</p>
+                      <p>{this.state.education.dateOfStudy}</p>
+                    </div>
                </div>
-               <div className="border-2 border-black mt-8 mb-8">
-                <p>Practical Info</p>
-                <p>{this.state.experience.companyName}</p>
-                <p>{this.state.experience.title}</p>
-                <p>{this.state.experience.date}</p>
-                <p>{this.state.experience.responsibilities}</p>
+               <div className="border-2 border-black m-8 bg-ghostWhite">
+                  <p className='text-center'>Work History</p>
+                    <div className='border-2 border-black'>
+                      <p>{this.state.experience.companyName}</p>
+                      <p>{this.state.experience.title}</p>
+                      <p>{this.state.experience.date}</p>
+                      <p>{this.state.experience.responsibilities}</p>
+                    </div>
                </div>
             </div>
       </div>

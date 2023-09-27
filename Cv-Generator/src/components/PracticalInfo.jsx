@@ -52,7 +52,7 @@ class PracticalInfo extends Component {
     } = this.state;
 
     return (
-      <div className="flex flex-col w-2/5">
+      <div className="flex flex-col w-3/5 ml-16">
         <label>Company Name</label>
         <input type="text" value={editedCompanyName} onChange={this.handleCompanyNameChange} />
         <label>Title</label>
@@ -65,7 +65,7 @@ class PracticalInfo extends Component {
           value={editedResponsibilities}
           onChange={this.handleResponsibilitiesChange}
         />
-        <button onClick={this.handleSubmit}>Submit</button>
+        <button className='bg-verdigris' onClick={this.handleSubmit}>Submit</button>
       </div>
     );
   }
