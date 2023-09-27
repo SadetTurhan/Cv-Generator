@@ -1,11 +1,13 @@
 import { useState } from 'react'
-import './App.css'
-import LeftSide from "./components/LeftSide"
+import "./App.css"
+import { LeftHeader } from "./components/LeftHeader"
+import { InfoContainer } from "./components/InfoContainer"
 function App() {
 
   return (
     <>
-      <LeftSide></LeftSide>
+      <LeftHeader />
+      <InfoContainer />
     </>
   )
 }
