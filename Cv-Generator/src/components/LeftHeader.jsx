@@ -1,9 +1,9 @@
 function LeftHeader() {
 
     return (
-      <>
-        <div>Muhammet Sadet Turhan</div>
-      </>
+      <div className="border-2 border-black">
+        <h1>Your Cv Generator</h1>
+      </div>
     )
   }
   
