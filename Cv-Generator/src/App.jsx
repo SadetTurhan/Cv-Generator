@@ -5,7 +5,7 @@ import { InfoContainer } from "./components/InfoContainer"
 function App() {
 
   return (
-    <div className='bg-lavenderWeb min-h-screen'>
+    <div className='bg-gradient-to-r from-gray-200 via-lavenderWeb to-gray-200 min-h-screen'>
       <LeftHeader />
       <InfoContainer />
     </div>

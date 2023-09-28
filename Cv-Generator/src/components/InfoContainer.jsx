@@ -58,26 +58,26 @@ handlePracticalInfoUpdate = (data) => {
                <div className="border-2 border-black m-8 bg-ghostWhite">
                   <p className='text-center'>Personal Info</p>
                     <div className='border-2 border-black'>
-                      <p>{this.state.generalInfo.name}</p>
-                      <p>{this.state.generalInfo.email}</p>
-                      <p>{this.state.generalInfo.phoneNumber}</p>
+                      <p className='mx-8 my-2'>{this.state.generalInfo.name}</p>
+                      <p className='mx-8 my-2'>{this.state.generalInfo.email}</p>
+                      <p className='mx-8 my-2'>{this.state.generalInfo.phoneNumber}</p>
                     </div>
                </div>
                <div className="border-2 border-black m-8 bg-ghostWhite">
                   <p className='text-center'>Educational Info</p>
                     <div className='border-2 border-black'>
-                      <p>{this.state.education.schoolName}</p>
-                      <p>{this.state.education.titleOfStudy}</p>
-                      <p>{this.state.education.dateOfStudy}</p>
+                      <p className='mx-8 my-2'>{this.state.education.schoolName}</p>
+                      <p className='mx-8 my-2'>{this.state.education.titleOfStudy}</p>
+                      <p className='mx-8 my-2'>{this.state.education.dateOfStudy}</p>
                     </div>
                </div>
                <div className="border-2 border-black m-8 bg-ghostWhite">
                   <p className='text-center'>Work History</p>
                     <div className='border-2 border-black'>
-                      <p>{this.state.experience.companyName}</p>
-                      <p>{this.state.experience.title}</p>
-                      <p>{this.state.experience.date}</p>
-                      <p>{this.state.experience.responsibilities}</p>
+                      <p className='mx-8 my-2'>{this.state.experience.companyName}</p>
+                      <p className='mx-8 my-2'>{this.state.experience.title}</p>
+                      <p className='mx-8 my-2'>{this.state.experience.date}</p>
+                      <p className='mx-8 my-2'>{this.state.experience.responsibilities}</p>
                     </div>
                </div>
             </div>

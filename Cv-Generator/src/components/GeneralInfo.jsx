@@ -34,16 +34,17 @@ class GeneralInfo extends Component{
         return (
             <div className="flex flex-col w-3/5 ml-16">
               <label>Name</label>
-              <input type="text" value={editedName} onChange={this.handleNameChange} />
+              <input className='border-2 bg-gray-200' type="text" value={editedName} onChange={this.handleNameChange} />
               <label>E-mail</label>
-              <input type="text" value={editedEmail} onChange={this.handleEmailChange} />
+              <input className='border-2 bg-gray-200' type="text" value={editedEmail} onChange={this.handleEmailChange} />
               <label>Phone Number</label>
               <input
+              className='border-2 bg-gray-200'
                 type="text"
                 value={editedPhoneNumber}
                 onChange={this.handlePhoneNumberChange}
               />
-              <button className='bg-verdigris' onClick={this.handleSubmit}>Submit</button>
+              <button className='bg-verdigris mx-8 my-4' onClick={this.handleSubmit}>Add</button>
             </div>
           );
     }

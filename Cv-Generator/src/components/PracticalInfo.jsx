@@ -54,18 +54,19 @@ class PracticalInfo extends Component {
     return (
       <div className="flex flex-col w-3/5 ml-16">
         <label>Company Name</label>
-        <input type="text" value={editedCompanyName} onChange={this.handleCompanyNameChange} />
+        <input className='border-2 bg-gray-200' type="text" value={editedCompanyName} onChange={this.handleCompanyNameChange} />
         <label>Title</label>
-        <input type="text" value={editedTitle} onChange={this.handleTitleChange} />
+        <input className='border-2 bg-gray-200' type="text" value={editedTitle} onChange={this.handleTitleChange} />
         <label>Date</label>
-        <input type="text" value={editedDate} onChange={this.handleDateChange} />
+        <input className='border-2 bg-gray-200' type="text" value={editedDate} onChange={this.handleDateChange} />
         <label>Responsibilities</label>
         <input
+        className='border-2 bg-gray-200'
           type="text"
           value={editedResponsibilities}
           onChange={this.handleResponsibilitiesChange}
         />
-        <button className='bg-verdigris' onClick={this.handleSubmit}>Submit</button>
+        <button className='bg-verdigris mx-8 my-4' onClick={this.handleSubmit}>Add</button>
       </div>
     );
   }
